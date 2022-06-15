@@ -1,11 +1,79 @@
-/* styles.css */
-body {
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 300;
-  text-align: center;
+*{
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
 
-h1 {
-  font-weight: 400
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.4);
 }
 
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 5vw;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+}
+
+#input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+#guess{
+  margin-right: 1vw;
+  font-size: 1.5vw;
+  border-radius: 1em;
+  text-indent: 1vw;
+  width: 15vw;
+  height: 5vh;
+}
+
+button{
+  width: 5vw;
+  height: 5vh;
+  font-size: 1.2vw;
+  border-radius: 1em;
+}
+
+button:hover{
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#feedback{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+  font-size: 32px;
+}
+
+#message{
+  font-size: 32px;
+}
+
+#instruct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vh;
+  font-size: 22px;
+}
+
+#last-num-guess{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}

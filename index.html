@@ -1,19 +1,39 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>Guessing Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
-    <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- your HTML should go here -->
-    <nav>
-      <h1>Let's Play the Guessing Number Game!</h1>
-    </nav>
+    
+    <div id="title">
+      <h1>Guess a Number</h1>
+    </div>
+    
+    <div id="input">
+      <input id="guess" placeholder="Enter Number">
+      <button onclick="guessingGame()">Submit</button>
+    </div>
+    
+    <div id="instruct">
+      <h2>Guess a number between 0 - 100</h2>
+    </div>
 
+    <div id ="feedback">
+      <h2 id="message">Goodluck!</h2>
+    </div>
+    
+    <div id="last-num-guess">
+      <h3>Last Number Guessed: </h3>
+      <h3 id="last-guess"> </h3>
+    </div>  
 
+    <script src="app.js"></script>
   </body>
 </html>
